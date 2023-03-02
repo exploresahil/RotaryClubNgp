@@ -28,7 +28,7 @@ jobs:
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v2
         with:
-          name: production-files
+          name: my-artifact
           path: ./dist
 
   deploy:
@@ -41,7 +41,7 @@ jobs:
       - name: Download artifact
         uses: actions/download-artifact@v2
         with:
-          name: production-files
+          name: my-artifact
           path: ./dist
 
       - name: Deploy to GitHub Pages
