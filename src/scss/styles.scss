@@ -1,2 +1,116 @@
 // Import all of Bootstrap's CSS
 @import "node_modules/bootstrap/scss/bootstrap";
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    border: 1px solid black !important;
+    min-width: 160px;
+    margin-top: 1em;
+    z-index: 4;
+}
+
+.dropdown-content a {
+    color: black;
+
+    padding: 0.5em 0.4em 0.5em 0.4em !important;
+    text-decoration: none;
+    display: block;
+   
+
+    font-size: 0.9em;
+}
+
+.dropdown-content a:hover {
+    color: red;
+
+     
+}
+
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.nav-item>.nav-link {
+    color: black;
+
+    padding: 0em 0.4em 0em 0.4em !important;
+    text-decoration: none;
+    display: block;
+    font-weight: 400 !important;
+    font-size: 1em;
+    margin-right: 0.5em;
+}
+
+.nav-item>.nav-link:hover {
+    color: red;
+}
+
+.loginbtn {
+    border: 1px solid black;
+    background-color: white !important;
+    border-radius: 40px;
+    padding: 0.1em 0.8em 0.1em 0.8em;
+    font-size: 0.8em;
+}
+
+.registerbtn {
+    border: 1px solid black;
+    background-color: black !important;
+    border-radius: 40px;
+    padding: 0.1em 0.8em 0.1em 0.8em;
+    color: white;
+    font-size: 0.8em;
+
+}
+
+//----------> Sahil Code
+$caroselHeight: 700px;
+
+#carouselExampleCaptions {
+  height: $caroselHeight !important;
+
+  .carousel-inner {
+    height: $caroselHeight !important;
+    background-color: black !important;
+
+    .carousel-item {
+      height: $caroselHeight !important;
+      position: relative !important;
+
+      img {
+        position: absolute !important;
+        inset: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        opacity: 0.6 !important;
+      }
+
+      .carousel-caption {
+        h5 {
+          font-size: 4rem !important;
+        }
+      }
+    }
+  }
+}
+
+.divisions {
+  gap: 2.2em !important
+}
+
+.header-height {
+  height: 80px ;
+}
