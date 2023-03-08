@@ -1,7 +1,6 @@
 // Import all of Bootstrap's CSS
 @import "node_modules/bootstrap/scss/bootstrap";
 
-
 .dropdown {
   position: relative;
   display: inline-block;
@@ -23,16 +22,12 @@
   text-decoration: none;
   display: block;
 
-
   font-size: 0.9em;
 }
 
 .dropdown-content a:hover {
   color: red;
-
-
 }
-
 
 .dropdown-content a:hover {
   background-color: #ddd;
@@ -42,7 +37,7 @@
   display: block;
 }
 
-.nav-item>.nav-link {
+.nav-item > .nav-link {
   color: black;
 
   padding: 0em 0.4em 0em 0.4em !important;
@@ -53,7 +48,7 @@
   margin-right: 0.5em;
 }
 
-.nav-item>.nav-link:hover {
+.nav-item > .nav-link:hover {
   color: red;
 }
 
@@ -72,7 +67,6 @@
   padding: 0.1em 0.8em 0.1em 0.8em;
   color: white;
   font-size: 0.8em;
-
 }
 
 //----------> Sahil Code
@@ -108,7 +102,7 @@ $caroselHeight: 700px;
 }
 
 .divisions {
-  gap: 2.2em !important
+  gap: 2.2em !important;
 }
 
 .header-height {
@@ -116,12 +110,9 @@ $caroselHeight: 700px;
 }
 
 .vr {
-
   height: 5em;
   background-color: black;
   opacity: 1;
-
-
 }
 
 .sectionTwoLabels {
@@ -146,7 +137,7 @@ $caroselHeight: 700px;
   width: 100%;
 }
 
-.boardMemberImg>img {
+.boardMemberImg > img {
   bottom: 0;
   height: 100%;
   left: 0;
@@ -157,12 +148,12 @@ $caroselHeight: 700px;
   top: 0;
   width: 100%;
 }
-.boardMemberFirstName{
-font-size: 1.5em;
-font-weight: 600;
-line-height:25px;
+.boardMemberFirstName {
+  font-size: 1.5em;
+  font-weight: 600;
+  line-height: 25px;
 }
-.knowmorebtn{
+.knowmorebtn {
   border: 1px solid #000;
   border-radius: 5px;
   cursor: pointer;
@@ -173,21 +164,24 @@ line-height:25px;
   text-decoration: none !important;
   color: black;
 }
-.knowmorebtn:hover{
+.knowmorebtn:hover {
   background-color: black;
   color: white !important;
 }
-.applybtn{
+.applybtn {
   border: 1px solid black;
   padding: 0.4em 1em 0.4em 1em;
 }
-.photogalleryimg{
+.photogalleryimg {
   width: 100%;
   padding: 0.5em;
   border-radius: 20px;
-
 }
-.selectyeartext{
+.selectyeartext {
   font-size: 1.3em;
   font-weight: 600;
+}
+
+.main-logo {
+  margin-bottom: 20px;
 }
