@@ -8,6 +8,7 @@
   </title>
   <link rel="icon" type="image/svg+xml" sizes="21x21" href="./assets/Pngs/apple-icon-114x114.png" />
   <script src="https://kit.fontawesome.com/686e939eb9.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -284,6 +285,7 @@
   </div>
 
 
+
   <div class="container-fluid py-5">
     <div class="row d-flex justify-content-center">
       <div class="col-12 col-md-10 col-lg-10 col-xl-10">
@@ -354,6 +356,103 @@
     </div>
   </div>
 
+  <!-- Card Slider -->
+
+  <div class="slide-container swiper">
+    <h2 class="featuredProjects">Featured Projects</h2>
+    <div class="slide-content">
+      <div class="card-wrapper swiper-wrapper">
+        <div class="card swiper-slide">
+          <div class="image-container">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1670965292487-5200ad7a2f35?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHw%3D">
+          </div>
+          <div class="info">
+            <h3>Project Name</h3>
+            <button>
+              Learn More
+            </button>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-container">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1670965292487-5200ad7a2f35?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHw%3D">
+          </div>
+          <div class="info">
+            <h3>Project Name</h3>
+            <button>
+              Learn More
+            </button>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-container">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1670965292487-5200ad7a2f35?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHw%3D">
+          </div>
+          <div class="info">
+            <h3>Project Name</h3>
+            <button>
+              Learn More
+            </button>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-container">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1670965292487-5200ad7a2f35?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHw%3D">
+          </div>
+          <div class="info">
+            <h3>Project Name</h3>
+            <button>
+              Learn More
+            </button>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-container">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1670965292487-5200ad7a2f35?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHw%3D">
+          </div>
+          <div class="info">
+            <h3>Project Name</h3>
+            <button>
+              Learn More
+            </button>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-container">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1670965292487-5200ad7a2f35?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHw%3D">
+          </div>
+          <div class="info">
+            <h3>Project Name</h3>
+            <button>
+              Learn More
+            </button>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-container">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1670965292487-5200ad7a2f35?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHw%3D">
+          </div>
+          <div class="info">
+            <h3>Project Name</h3>
+            <button>
+              Learn More
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper-button-next swiper-navBtn"></div>
+    <div class="swiper-button-prev swiper-navBtn"></div>
+    <div class="swiper-pagination"></div>
+  </div>
 
   <div class="container-fluid pb-5">
     <div class="row d-flex justify-content-center">
@@ -542,6 +641,7 @@
 
 
   <script type="module" src="./js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script type="text/javascript">
     window.onload = function () {
       //Reference the DropDownList.
@@ -559,6 +659,46 @@
       }
     };
   </script>
+  <script type="module">
+
+    var swiper = new Swiper(".slide-content", {
+      slidesPerView: 3,
+      spaceBetween: 20,
+      loop: true,
+      centerSlide: 'true',
+      fade: 'true',
+      grabCursor: 'true',
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        dynamicBullets: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        520: {
+          slidesPerView: 2,
+        },
+        950: {
+          slidesPerView: 3,
+        },
+      },
+    });
+
+  </script>
+
+
+
 </body>
 
 </html>
