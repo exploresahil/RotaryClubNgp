@@ -3,75 +3,75 @@
 
 
 .dropdown {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .dropdown-content {
-    display: none;
-    position: absolute;
-    border: 1px solid black !important;
-    min-width: 160px;
-    margin-top: 1em;
-    z-index: 4;
+  display: none;
+  position: absolute;
+  border: 1px solid black !important;
+  min-width: 160px;
+  margin-top: 1em;
+  z-index: 4;
 }
 
 .dropdown-content a {
-    color: black;
+  color: black;
 
-    padding: 0.5em 0.4em 0.5em 0.4em !important;
-    text-decoration: none;
-    display: block;
-   
+  padding: 0.5em 0.4em 0.5em 0.4em !important;
+  text-decoration: none;
+  display: block;
 
-    font-size: 0.9em;
+
+  font-size: 0.9em;
 }
 
 .dropdown-content a:hover {
-    color: red;
+  color: red;
 
-     
+
 }
 
 
 .dropdown-content a:hover {
-    background-color: #ddd;
+  background-color: #ddd;
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+  display: block;
 }
 
 .nav-item>.nav-link {
-    color: black;
+  color: black;
 
-    padding: 0em 0.4em 0em 0.4em !important;
-    text-decoration: none;
-    display: block;
-    font-weight: 400 !important;
-    font-size: 1em;
-    margin-right: 0.5em;
+  padding: 0em 0.4em 0em 0.4em !important;
+  text-decoration: none;
+  display: block;
+  font-weight: 400 !important;
+  font-size: 1em;
+  margin-right: 0.5em;
 }
 
 .nav-item>.nav-link:hover {
-    color: red;
+  color: red;
 }
 
 .loginbtn {
-    border: 1px solid black;
-    background-color: white !important;
-    border-radius: 40px;
-    padding: 0.1em 0.8em 0.1em 0.8em;
-    font-size: 0.8em;
+  border: 1px solid black;
+  background-color: white !important;
+  border-radius: 40px;
+  padding: 0.1em 0.8em 0.1em 0.8em;
+  font-size: 0.8em;
 }
 
 .registerbtn {
-    border: 1px solid black;
-    background-color: black !important;
-    border-radius: 40px;
-    padding: 0.1em 0.8em 0.1em 0.8em;
-    color: white;
-    font-size: 0.8em;
+  border: 1px solid black;
+  background-color: black !important;
+  border-radius: 40px;
+  padding: 0.1em 0.8em 0.1em 0.8em;
+  color: white;
+  font-size: 0.8em;
 
 }
 
@@ -112,13 +112,82 @@ $caroselHeight: 700px;
 }
 
 .header-height {
-  height: 80px ;
+  height: 80px;
 }
+
 .vr {
 
-height: 5em ;
-background-color: black;
-opacity: 1;
+  height: 5em;
+  background-color: black;
+  opacity: 1;
 
 
+}
+
+.sectionTwoLabels {
+  line-height: 1em;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.Members-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 10px 0 rgb(0 0 0 / 20%);
+  overflow: hidden;
+  width: 270px;
+  margin-top: 1em;
+}
+
+.boardMemberImg {
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.boardMemberImg>img {
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  margin: auto;
+  object-fit: cover;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+.boardMemberFirstName{
+font-size: 1.5em;
+font-weight: 600;
+line-height:25px;
+}
+.knowmorebtn{
+  border: 1px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.8em;
+  height: fit-content;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  color: black;
+}
+.knowmorebtn:hover{
+  background-color: black;
+  color: white !important;
+}
+.applybtn{
+  border: 1px solid black;
+  padding: 0.4em 1em 0.4em 1em;
+}
+.photogalleryimg{
+  width: 100%;
+  padding: 0.5em;
+  border-radius: 20px;
+
+}
+.selectyeartext{
+  font-size: 1.3em;
+  font-weight: 600;
 }
