@@ -114,6 +114,23 @@ button {
 .sidenav{
   display: none !important;
 }
+.divisions {
+  gap: 2.2em !important;
+}
+.photogallerysection{
+  display: flex ;
+  justify-content: space-between;
+}
+.sectiontwolabelsposition{
+  padding-left: 0em;
+}
+.sectiontwolabelsposition2{
+  display: flex;
+  justify-content: center;
+}
+.Membersvr{
+  display: none;
+}
 
 //----------> Sahil Code
 $caroselHeight: 700px;
@@ -149,7 +166,70 @@ $caroselHeight: 700px;
   }
 }
 
+@media only screen and (min-device-width : 320px)and (max-device-width : 425px) {
+  .sectiontwolabelsposition2{
+    display: flex;
+    justify-content: left !important;
+  }
+  .sectiontwolabelsposition{
+    padding-left: 0em;
+  }
+  .hidebtn{
+    display: none;
+  }
+
+  .photogallerysection{
+    display: grid;
+
+  }
+  .vr{
+    display: none !important;
+  }
+  .divisions {
+    gap: 2em !important;
+  }
+  .sidenav{
+    display: block !important;
+  }
+  .navbar-toggler{
+    display: none !important;
+  }
+ 
+}
+
 @media only screen and (min-device-width: 426px) and (max-device-width: 768px) {
+  .Membersvr{
+    display: block;
+    display: flex;
+    justify-content: center;
+  }
+  .sectiontwolabelsposition{
+    padding-left: 2em;
+  }
+  .Members-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 330px !important;
+    margin-top: 1em;
+}
+  //  .vr{
+  //   display: none !important;
+  // }
+  .divisions {
+    gap: 6em !important;
+  }
+  .sidenav{
+    display: block !important;
+  }
+  .hidebtn{
+    display: none;
+  }
+  .navbar-toggler{
+    display: none !important;
+  }
+  
   .carousel-caption {
     padding-bottom: 10em;
 
@@ -159,9 +239,7 @@ $caroselHeight: 700px;
   }
 }
 
-.divisions {
-  gap: 2.2em !important;
-}
+
 
 .header-height {
   height: 80px;
@@ -262,7 +340,7 @@ $caroselHeight: 700px;
   max-width: 100vw;
   width: 100%;
   padding: 40px 40px;
-  margin-bottom: 80px;
+  // margin-bottom: 80px;
   background-color: #e8e8e8;
   padding-bottom: 100px;
 }
