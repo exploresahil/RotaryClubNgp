@@ -13,5 +13,5 @@ export default {
     hot: true,
   },
 
-  base: "/RotaryClubNgp/",
+  //base: "/RotaryClubNgp/",
 };
