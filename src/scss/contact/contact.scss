@@ -1,0 +1,102 @@
+@use "../variables" as v;
+
+.contact {
+  width: 100vw;
+  height: calc(100vh - 40px);
+
+  background-color: v.$gray;
+
+  .contact-form-container {
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    //align-items: center;
+    gap: 1em;
+
+    h2 {
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+
+    .fName,
+    .lName,
+    .message {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4em;
+
+      label {
+        font-size: 1.5rem;
+      }
+    }
+    .fName,
+    .lName {
+      input {
+        font-family: v.$poppins;
+        outline: none;
+        border: none;
+        width: 400px;
+
+        padding: 10px 20px;
+
+        border-radius: 10px;
+
+        font-size: 1.2rem;
+        font-weight: 100;
+      }
+    }
+
+    .message {
+      textarea {
+        font-family: v.$poppins;
+
+        width: 400px;
+        outline: none;
+        border: none;
+        padding: 20px 20px;
+
+        border-radius: 10px;
+        font-size: 1.2rem;
+        font-weight: 100;
+      }
+    }
+
+    button {
+      width: fit-content;
+      margin-left: auto;
+      background-color: v.$light;
+      padding: 10px 20px;
+      border-radius: 10px;
+
+      cursor: pointer;
+
+      &:hover {
+        background-color: v.$blue;
+        color: v.$light;
+      }
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    height: 700px;
+    .fName,
+    .lName {
+      input {
+        width: 280px !important;
+      }
+    }
+
+    textarea {
+      width: 280px !important;
+    }
+  }
+}

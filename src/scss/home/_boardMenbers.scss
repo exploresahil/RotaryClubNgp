@@ -1,0 +1,106 @@
+@use "../variables" as v;
+
+.boardMenbers {
+  width: 100vw;
+  padding: 0 10vw;
+
+  h2 {
+    width: 100%;
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  &-container {
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    place-content: center;
+  }
+
+  &-card {
+    width: 280px;
+    height: 350px;
+    border-radius: 10px;
+
+    margin: 10px;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  &-img-container {
+    width: 100%;
+    height: 80%;
+
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+
+    position: relative;
+
+    img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: scale 200ms ease-out;
+
+      &:hover {
+        scale: 1.05;
+      }
+    }
+  }
+
+  &-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    height: 20%;
+
+    button {
+      border: 1px solid v.$dark;
+      padding: 5px 10px;
+      border-radius: 10px;
+      cursor: pointer;
+
+      &:hover {
+        border: none;
+        background-color: v.$blue;
+        color: v.$light;
+      }
+    }
+  }
+
+  &-Name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    p {
+      margin-top: -5px;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .boardMenbers-container {
+      grid-template-columns: auto auto auto;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .boardMenbers-container {
+      grid-template-columns: auto auto;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .boardMenbers-container {
+      grid-template-columns: auto;
+    }
+  }
+}

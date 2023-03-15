@@ -1,0 +1,77 @@
+@use "../variables" as v;
+
+.homeOverView {
+  width: 100vw;
+  padding: 20px 10vw;
+
+  .homeOverView-container {
+    display: flex;
+    justify-content: space-between;
+
+    .homeOverView-card {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      gap: 1em;
+
+      span {
+        scale: 1.5;
+      }
+
+      &-info {
+        h3 {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1370px) {
+  .homeOverView {
+    padding: 10px 6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .homeOverView-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      place-items: start;
+      grid-column-gap: 5em;
+      grid-row-gap: 1em;
+
+      .homeOverView-card {
+        &-info {
+          h3 {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .homeOverView {
+    padding: 10px 10vw;
+
+    .homeOverView-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      place-items: start;
+      grid-column-gap: 2em;
+      grid-row-gap: 1em;
+      align-items: start;
+
+      .homeOverView-card {
+        &-info {
+          h3 {
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}

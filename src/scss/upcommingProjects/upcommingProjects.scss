@@ -1,0 +1,99 @@
+@use "../variables" as v;
+
+.upcommingProjects {
+  width: 100vw;
+  background-color: v.$gray;
+  .upcommingProjects-Title {
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+  }
+
+  .card-wrapper {
+    width: 100%;
+    padding: 0 10vw 80px 10vw;
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1.5em;
+  }
+
+  .card {
+    width: 100%;
+    height: 280px;
+    border-radius: 10px;
+    background-color: v.$light;
+
+    .image-container {
+      width: 100%;
+      height: 200px;
+      background-color: pink;
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px 10px 0 0;
+
+      img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    h3 {
+      font-weight: 600;
+      font-size: 1.2rem;
+    }
+
+    button {
+      border: 1px solid black;
+      padding: 6px 15px;
+      border-radius: 10px;
+
+      &:hover {
+        background-color: black;
+        color: white;
+      }
+    }
+  }
+
+  .upcommingProjects-info {
+    padding: 0 20px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .card-wrapper {
+      grid-template-columns: auto auto;
+
+      .upcommingProjects-info {
+        h3 {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .card-wrapper {
+      grid-template-columns: auto;
+
+      .upcommingProjects-info {
+        h3 {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}

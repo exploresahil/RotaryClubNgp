@@ -1,0 +1,22 @@
+//*----------> Import Font Family
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+//*----------> Font Family
+
+$poppins: "Poppins", sans-serif;
+
+//*----------> Colors
+
+$dark: hsl(0, 0%, 0%);
+$light: hsl(0, 0%, 100%);
+
+$gray: #e8e8e8;
+
+$yellow: #fbbc04;
+$blue: #4285f4;
+$red: #ea4335;
+$green: #34a853;
+
+$lt-blue: hsl(224, 23%, 55%);
+$dk-blue: hsl(223, 47%, 23%);

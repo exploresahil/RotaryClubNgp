@@ -1,0 +1,113 @@
+@use "../variables" as v;
+
+.photoGallery {
+  width: 100vw;
+  padding: 0 10vw;
+  background-color: v.$gray;
+
+  &-container {
+    width: 100%;
+  }
+
+  &-title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+
+    h2 {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+  }
+
+  &-year-container {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+
+    h3 {
+      font-weight: 500;
+    }
+
+    select {
+      padding: 5px 20px;
+      background-color: v.$light;
+      outline: none;
+      border: 1px solid v.$dark;
+      border-radius: 10px;
+      color: v.$dark;
+    }
+
+    button {
+      border: 1px solid v.$dark;
+      padding: 5px 10px;
+      border-radius: 10px;
+      cursor: pointer;
+      background-color: v.$light;
+
+      &:hover {
+        border: none;
+        background-color: v.$blue;
+        color: v.$light;
+      }
+    }
+  }
+
+  &-photos-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1.6em;
+
+    padding-bottom: 60px;
+  }
+
+  &-img-comtainer {
+    background-color: pink;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      inset: 0;
+      object-fit: cover;
+
+      transition: scale 200ms ease-out;
+
+      &:hover {
+        scale: 1.05;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .photoGallery-photos-container {
+      grid-template-columns: auto auto;
+
+      .photoGallery-img-comtainer {
+        height: 200px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .photoGallery-title {
+      flex-direction: column;
+      align-items: center;
+      gap: 1em;
+    }
+
+    .photoGallery-photos-container {
+      grid-template-columns: auto;
+
+      .photoGallery-img-comtainer {
+        height: 250px;
+      }
+    }
+  }
+}
