@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+.contact {
+  width: 100vw;
+  height: calc(100vh - 40px);
+  background-color: #e8e8e8;
+}
+.contact .contact-form-container {
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact .contact-form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+}
+.contact .contact-form h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.contact .contact-form .fName,
+.contact .contact-form .lName,
+.contact .contact-form .message {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+}
+.contact .contact-form .fName label,
+.contact .contact-form .lName label,
+.contact .contact-form .message label {
+  font-size: 1.5rem;
+}
+.contact .contact-form .fName input,
+.contact .contact-form .lName input {
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  border: none;
+  width: 400px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+.contact .contact-form .message textarea {
+  font-family: "Poppins", sans-serif;
+  width: 400px;
+  outline: none;
+  border: none;
+  padding: 20px 20px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+.contact .contact-form button {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  background-color: hsl(0, 0%, 100%);
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.contact .contact-form button:hover {
+  background-color: #4285f4;
+  color: hsl(0, 0%, 100%);
+}
+@media screen and (max-width: 500px) {
+  .contact {
+    height: 700px;
+  }
+  .contact .fName input,
+  .contact .lName input {
+    width: 280px !important;
+  }
+  .contact textarea {
+    width: 280px !important;
+  }
+}/*# sourceMappingURL=contact.css.map */

@@ -7,11 +7,22 @@
   background-color: pink;
 }
 
+$hero-height-mobile: 300px;
+
 #mySwiper {
   width: 100vw;
   height: calc(100vh - 80px);
   .swiper-wrapper {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .home-hero {
+    margin-top: 80px;
+    width: 100vw;
+    height: $hero-height-mobile;
+    background-color: pink;
   }
 }
 
@@ -78,6 +89,44 @@
   .swiper-rtl .swiper-button-prev::after {
     content: url(../assets/svg/chevron-right-solid.svg);
     opacity: 0.75;
+  }
+
+  @media screen and (max-width: 600px) {
+    .swiper-slide {
+      height: $hero-height-mobile;
+    }
+
+    .swiper-button-prev::after,
+    .swiper-rtl .swiper-button-next::after {
+      scale: 0.6;
+      margin-bottom: 10em !important;
+      transform: translateX(-20px);
+      opacity: 0.2;
+    }
+
+    .swiper-button-next::after,
+    .swiper-rtl .swiper-button-prev::after {
+      scale: 0.6;
+      margin-bottom: 10em !important;
+      transform: translateX(20px);
+      opacity: 0.2;
+    }
+
+    .swiper-pagination-bullet {
+      display: none;
+    }
+
+    .home-hero-info {
+      h3 {
+        font-size: 2em;
+        margin-bottom: 0.2em;
+        padding: 0 10px;
+      }
+      p {
+        margin-bottom: 0.4em;
+        font-size: 1em;
+      }
+    }
   }
 }
 
