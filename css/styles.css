@@ -104,7 +104,8 @@ header nav ul li {
   height: 100%;
   padding: 5px;
 }
-header nav ul li a:hover, header nav ul li a:focus {
+header nav ul li a:hover,
+header nav ul li a:focus {
   color: #ea4335;
 }
 header nav ul .nav-dropdown-container {
@@ -293,7 +294,7 @@ header nav ul .nav-dropdown-container:hover .nav-dropdown {
   height: 100%;
   inset: 0;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   opacity: 0.5;
 }
 #mySwiper .swiper-button-next,
@@ -498,7 +499,7 @@ header nav ul .nav-dropdown-container:hover .nav-dropdown {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transition: scale 200ms ease-out;
 }
 .featuredProjects .image-container img:hover {
@@ -635,7 +636,7 @@ header nav ul .nav-dropdown-container:hover .nav-dropdown {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transition: scale 200ms ease-out;
 }
 .boardMenbers-img-container img:hover {
@@ -752,7 +753,7 @@ header nav ul .nav-dropdown-container:hover .nav-dropdown {
   height: 100%;
   inset: 0;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transition: scale 200ms ease-out;
 }
 .photoGallery-img-comtainer img:hover {
@@ -916,12 +917,12 @@ footer .copyright {
   width: 100%;
   padding: 0 10vw 80px 10vw;
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 1.5em;
 }
 .upcommingProjects .card {
   width: 100%;
-  height: 280px;
+  height: auto;
   border-radius: 10px;
   background-color: hsl(0, 0%, 100%);
 }
@@ -939,7 +940,7 @@ footer .copyright {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .upcommingProjects .card h3 {
   font-weight: 600;
@@ -955,8 +956,8 @@ footer .copyright {
   color: white;
 }
 .upcommingProjects .upcommingProjects-info {
-  padding: 0 20px;
-  height: 80px;
+  padding: 20px 20px;
+  height: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1062,4 +1063,4 @@ footer .copyright {
 
 #main {
   margin-top: 80px;
-}/*# sourceMappingURL=styles.css.map */
+} /*# sourceMappingURL=styles.css.map */
