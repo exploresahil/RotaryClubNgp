@@ -959,12 +959,13 @@ footer .copyright {
   padding: 20px 20px;
   height: auto;
   display: flex;
+  flex-direction: column;
+  gap: 1em;
   justify-content: space-between;
-  align-items: center;
 }
 @media screen and (max-width: 1200px) {
   .upcommingProjects .card-wrapper {
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
   }
   .upcommingProjects .card-wrapper .upcommingProjects-info h3 {
     font-size: 1.2rem;
