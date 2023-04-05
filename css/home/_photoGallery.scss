@@ -56,10 +56,15 @@
 
   &-photos-container {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 1.6em;
 
     padding-bottom: 60px;
+    div {
+      p {
+        margin-top: 10px;
+      }
+    }
   }
 
   &-img-comtainer {
